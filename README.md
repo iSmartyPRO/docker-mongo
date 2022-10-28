@@ -18,3 +18,9 @@ docker-compose down
 ```
 mongosh mongodb://ismarty:SomePasswordHere@yourIpHere
 ```
+
+## Создание пользователя и базы данных
+```
+db = db.getSiblingDB('DATABASE_NAME')
+db.createUser( { user: "DATABASE_USER", pwd: "DATABASE_PASSWORD", roles: [ "readWrite"]} )
+```
