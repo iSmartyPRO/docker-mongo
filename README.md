@@ -24,3 +24,9 @@ mongosh mongodb://ismarty:SomePasswordHere@yourIpHere
 db = db.getSiblingDB('DATABASE_NAME')
 db.createUser( { user: "DATABASE_USER", pwd: "DATABASE_PASSWORD", roles: [ "readWrite"]} )
 ```
+
+### Используя bash срипт
+
+```
+./create-dbAndUser.sh -databasename=dbName -username=dbUser -password=dbPassword
+```
